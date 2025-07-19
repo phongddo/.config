@@ -7,6 +7,10 @@ end
 
 local home_dir = wezterm.home_dir
 
+config.set_environment_variables = {
+  XDG_CONFIG_HOME = home_dir..'/.config'
+}
+
 config.default_prog = { home_dir..'/.cargo/bin/nu' }
 
 config.hide_tab_bar_if_only_one_tab = true
